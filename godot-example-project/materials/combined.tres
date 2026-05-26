@@ -1,0 +1,36 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://c8mg4dmo86fad"]
+
+[ext_resource type="Shader" uid="uid://bgb0dokw0k6n3" path="res://shaders/blend_env_materials_v2.gdshader" id="1_gqw6j"]
+[ext_resource type="Texture2D" uid="uid://b3p65oteqnbxp" path="res://textures/fbm_seamless_noise.png" id="2_rxk4g"]
+[ext_resource type="Texture2D" uid="uid://bao1tkkooq171" path="res://materials/panel_metal_albedo.png" id="3_vj58h"]
+[ext_resource type="Texture2D" uid="uid://d2gr3gygjec8f" path="res://materials/panel_rust_albedo.png" id="4_kk6aa"]
+[ext_resource type="Texture2D" uid="uid://bp6xhij0o24bw" path="res://materials/panel_metal_normal.png" id="5_8sbli"]
+[ext_resource type="Texture2D" uid="uid://bekg2dmlb1nxs" path="res://materials/panel_rust_normal.png" id="6_wudgx"]
+[ext_resource type="Texture2D" uid="uid://ddiias3law4nu" path="res://materials/panel_metal_orm.png" id="7_aegbb"]
+[ext_resource type="Texture2D" uid="uid://c0otpcoe16pif" path="res://materials/panel_rust_orm.png" id="8_u2d0c"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_gqw6j")
+shader_parameter/albedo_a = Color(1, 1, 1, 1)
+shader_parameter/texture_albedo_a = ExtResource("3_vj58h")
+shader_parameter/albedo_b = Color(1, 1, 1, 1)
+shader_parameter/texture_albedo_b = ExtResource("4_kk6aa")
+shader_parameter/texture_orm_a = ExtResource("7_aegbb")
+shader_parameter/texture_orm_b = ExtResource("8_u2d0c")
+shader_parameter/texture_normal_a = ExtResource("5_8sbli")
+shader_parameter/normal_scale_a = 1.0
+shader_parameter/texture_normal_b = ExtResource("6_wudgx")
+shader_parameter/normal_scale_b = 1.0
+shader_parameter/heightmap_scale = 7.599999989338357e-07
+shader_parameter/heightmap_flip = Vector2(1, 1)
+shader_parameter/uv1_scale = Vector3(1, 1, 1)
+shader_parameter/uv1_offset = Vector3(0, 0, 0)
+shader_parameter/blending_add_mul = Vector2(0, 1)
+shader_parameter/roughness_add_mul = Vector2(0, 1)
+shader_parameter/metallic_add_mul = Vector2(0, 1)
+shader_parameter/blending_noise = ExtResource("2_rxk4g")
+shader_parameter/blending_threshold = 0.1110000052725
+shader_parameter/blending_softness = 0.050000002375
+shader_parameter/noise_scale = Vector2(2, 3)
+shader_parameter/noise_strength = 1.0

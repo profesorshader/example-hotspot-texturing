@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://xgwtqevo5rva"]
+
+[ext_resource type="PackedScene" uid="uid://bvjipcxui51nh" path="res://models/metal_stuff.glb" id="1_o5qli"]
+
+[node name="Node3D" type="Node3D" unique_id=337008158]
+
+[node name="metal_stuff" parent="." unique_id=1199178656 instance=ExtResource("1_o5qli")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1538436510]
+transform = Transform3D(0.7029107, -0.564831, 0.432299, 0.37866592, 0.8116535, 0.44478142, -0.60210365, -0.14894488, 0.7844024, 0, 0, 0)
+shadow_enabled = true
